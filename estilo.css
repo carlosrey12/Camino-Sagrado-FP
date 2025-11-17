@@ -1,0 +1,1210 @@
+nav {
+  background-color: #BDFCFF;
+  color: #143DFF;
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+}
+
+nav a {
+  display: inline-block;
+  margin: 3px;
+  padding: 8px 10px;
+  background-color: #983493;
+  color: #143DFF;
+  font-family: monospace;
+  text-decoration: none;
+  transition: background-color 0.4s, color 0.4s;
+  border-radius: 15px;
+  font-size: 1.2em;
+
+}
+
+nav a:hover {
+  color: #FFFDFD;
+  font-family: Arial;
+  background-color: #ffffff; /*color del fondo de los iconos del menu al pasar el cuersor*/
+}
+
+/* Fuente y ajustes generales */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Franja superior */
+.top-bar {
+  background-color: #1D2B64;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px;
+}
+
+.donar {
+  background-color: #FFD600;
+  color: #1D2B64;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social a {
+  margin: 0 8px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+/* Texto en movimiento (marquesina moderna) */
+.ticker {
+  background: #ffffff;
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.ticker-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: moverTexto 18s linear infinite;
+  font-size: 1.1em;
+}
+
+@keyframes moverTexto {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Menú principal */
+.main-menu {
+  background-color: #009bb3;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.main-menu .logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.main-menu .logo span {
+  color: #FFD600;
+}
+
+.main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.main-menu a:hover {
+  color: #499873;/*color de las letras del menu al pasar el cursor */
+}
+/*facebook */
+
+.facebook-widget {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.facebook-widget h3 {
+  color: #143DFF;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.facebook-widget p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+ 
+
+.facebook-widget a:hover {
+  text-decoration: underline;
+}
+
+/* Baner */
+.banner {
+  background-color: #1D2B64; /* borde azul */
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-contenido {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  max-width: 1200px;/*1200*/
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.banner-contenido img {
+  width: 100%;
+  max-width: 2880px;/*2880*/
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.banner-contenido h1 {
+  margin-top: 10px;
+  font-size: 1.6em;
+  color: #5d2074;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*contenido principal*/
+
+.contenido-principal {
+  padding: 30px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bienvenida h2 {
+  color: #143DFF;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/*CSS DE LAS SECCIOMES DESTACADAS (NO MUY SEGURO JEJE)*/
+.destacados h3 {
+  color: #FFD600;
+  margin-top: 30px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.tarjeta {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta h4 {
+  color: #009bb3;
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  color: #333;
+  font-size: 0.95em;
+}
+
+.mensaje-dia {
+  margin-top: 40px;
+  background-color: #D1B4FF;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mensaje-dia blockquote {
+  font-size: 1.2em;
+  color: #1D2B64;
+  font-style: italic;
+}
+
+.secciones-destacadas a {
+  color: #5a2a27; /* Un tono más sobrio y devocional */
+  text-decoration: none;
+}
+
+.secciones-destacadas a:hover {
+  color: #7a3e3e; /* Color al pasar el mouse */
+}
+
+
+/*manu */
+/* Distribución horizontal */
+.contenido {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+
+}
+
+/* borde del contenido principal*/
+.contenido main {
+
+
+  box-shadow:
+  0 0 25px rgba(232, 198, 47, 0.4),
+  0 0 50px  rgba(19, 127, 164, 0.2);
+  overflow: visible;
+
+}
+
+/* Fondo para el main */
+.contenido-principal {
+  flex: 2;
+  background: linear-gradient(to bottom right, #fdf6e3, #e5e5f7);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Fondo para el aside */
+.facebook-widget {
+  flex: 1;
+  background: linear-gradient(to bottom right, #fffbe6, #f8f9fa);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow:
+  0 0 25px rgba(232, 198, 47, 0.4),
+  0 0 50px  rgba(19, 127, 164, 0.2);
+  overflow: visible;
+}
+
+/* Mensaje del día */
+.mensaje-dia {
+  margin-top: 40px;
+  background-color: #983493;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mensaje-dia h3 {
+  color: #ffd600;
+  font-size: 1.4em;
+}
+
+.mensaje-dia blockquote {
+  font-size: 1.2em;
+  color: white;
+  font-style: italic;
+}
+
+.reflexion-final {
+  background-color: #f9f3ff;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-top: 2px solid #983493;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(152, 52, 147, 0.1);
+  text-align: center;
+  font-style: italic;
+  color: #5c2c5c;
+}
+
+
+
+
+
+
+
+
+/* Tarjetas */
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.tarjeta {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta h4 {
+  color: #009bb3;
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  color: #333;
+  font-size: 0.95em;
+}
+
+/*fondo*/
+body {
+  background-image: url('imagenes/fondo1.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+/* Sección con video */
+.video-section {
+  position: relative;
+  height: 100vh; /* ocupa toda la pantalla */
+  overflow: hidden;
+}
+
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; /* ajusta el video al tamaño */
+  z-index: -1; /* lo manda al fondo */
+}
+/* Texto encima del video */
+.video-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  color: white;
+  text-shadow: 
+    0 0 5px #fff,   /* brillo cercano */
+    0 0 10px #0ff,  /* brillo turquesa */
+    0 0 20px #0ff, 
+    0 0 40px #0ff;  /* brillo más extendido */
+}
+
+.video-content h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.video-content p {
+  font-size: 1.5em;
+}
+
+/* CSS */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* mejora contraste */
+}
+
+.video-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.video-content p {
+  font-size: 1.5rem;
+  max-width: 600px;
+}
+
+
+
+
+
+
+
+
+.layout {
+  display: flex;          /* coloca main y aside en fila */
+  gap: 20px;              /* espacio entre ellos */
+  align-items: flex-start; /* que se alineen arriba */
+}
+
+.contenido-principal {
+  flex: 3;                /* ocupa más espacio */
+}
+
+.facebook-widget {
+  flex: 1;                /* ocupa menos espacio */
+  max-width: 600px;     /* 340px*/  /* ancho fijo para el widget */
+}
+
+
+
+
+
+.redes-widget {
+  width: 340px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.facebook-widget,
+.youtube-widget {
+  margin-bottom: 2rem;
+}
+
+.facebook-widget h3,
+.youtube-widget h3 {
+  font-size: 1.2rem;
+  color: #143DFF;
+  margin-bottom: 0.5rem;
+}
+
+.facebook-widget p,
+.youtube-widget p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.youtube-embed {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/* CSS DE SANTOS */
+/* SAN PEDRO APOSTOL */
+
+.publicidad-devocional {
+  padding: 2rem;
+  background-color: #cff7f7;
+  border-top: 2px solid #ccc;
+}
+
+.publicidad-devocional h3 {
+  font-size: 1.5rem;
+  color: #4b2e83;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tarjeta-publicitaria {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+    text-align: center;
+}
+
+.imagen-santo img {
+  width: 180px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.contenido-santo h4 {
+  font-size: 1.3rem;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+}
+
+.contenido-santo p {
+  color: #555;
+  font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+
+.publicidad-devocional.carcha {
+  background-color: #d96f6f;
+  border-top: 2px solid #006400; /* verde profundo */
+}
+
+.publicidad-devocional.carcha h3 {
+  color: #006400;
+}
+
+.publicidad-devocional.carcha .tarjeta-publicitaria {
+  box-shadow: 0 0 10px rgba(0, 100, 0, 0.2);
+}
+
+.publicidad-devocional.carcha .imagen-santo img {
+  border: 2px solid #006400;
+}
+
+
+/* SANTO DOMINGO */
+
+
+.tarjeta-publicitaria {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+ 
+}
+
+.imagen-santo img {
+  width: 180px;
+  border-radius: 8px;
+  border: 2px solid #b2f7c4;
+}
+
+.contenido-santo h4 {
+  font-size: 1.3rem;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+  
+}
+
+.contenido-santo p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.publicidad-devocional.coban {
+  background-color: #d0fecf;
+  border-top: 2px solid #8b0000; /* rojo vino */
+}
+
+.publicidad-devocional.coban h3 {
+  color: #8b0000;
+}
+
+.publicidad-devocional.coban .tarjeta-publicitaria {
+  box-shadow: 0 0 10px rgba(139, 0, 0, 0.2);
+}
+
+.publicidad-devocional.coban .imagen-santo img {
+  border: 2px solid #8b0000;
+}
+
+
+/*chamenlo */
+
+.publicidad-devocional.chamelco {
+  background-color: #80add2; /* azul claro */
+  border-top: 2px solid #868580;
+}
+
+.publicidad-devocional.chamelco h3 {
+  color: #fbff14;
+}
+
+.publicidad-devocional.chamelco .tarjeta-publicitaria {
+  box-shadow: 0 0 10px #d7070733;
+}
+
+
+
+
+/* san Cristobal*/
+.publicidad-devocional.san-cristobal {
+  background-color: #fff8f0; /* tono cálido */
+  border-top: 2px solid #a0522d;
+}
+
+.publicidad-devocional.san-cristobal h3 {
+  color: #a0522d;
+}
+
+.publicidad-devocional.san-cristobal .tarjeta-publicitaria {
+  box-shadow: 0 0 10px rgba(160, 82, 45, 0.2);
+}
+
+.publicidad-devocional.san-cristobal .imagen-santo img {
+  width: 180px;
+  border-radius: 8px;
+  border: 2px solid #a0522d;
+}
+
+.publicidad-devocional.san-cristobal .contenido-santo h4 {
+  font-size: 1.3rem;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+}
+
+.publicidad-devocional.san-cristobal .contenido-santo p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+
+/*TACTIC*/
+.publicidad-devocional.tactic {
+  background-color: #f5f5ff; /* tono mariano suave */
+  border-top: 2px solid #4169e1;
+}
+
+.publicidad-devocional.tactic h3 {
+  color: #4169e1;
+}
+
+.publicidad-devocional.tactic .tarjeta-publicitaria {
+  box-shadow: 0 0 10px rgba(65, 105, 225, 0.2);
+}
+
+.publicidad-devocional.tactic .imagen-santo img {
+  width: 180px;
+  border-radius: 8px;
+  border: 2px solid #4169e1;
+}
+
+.publicidad-devocional.tactic .contenido-santo h4 {
+  font-size: 1.3rem;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+}
+
+.publicidad-devocional.tactic .contenido-santo p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+ 
+}
+ 
+.mensaje-dia h3 {
+     color: #ffd600;
+  font-size: 1.4em;
+}
+
+
+
+/* EL CSS QUE ESTA ABAJO 👇 NO LE HACE NADA A LA PAGINA YA QUE NO ESTA VINCULADO SOLO ME AYUDA A SABER QUE CONTENDRA LOS CSS DE ARRIBA 👍 
+PERO EN CONTENIDO DE SANTOS SI SE VINCULA PERO AL DE PROCESIONES NO, Pero siempre lo revisas cuando publiques algo nuevo*/
+
+@media screen and (max-width: 768px) {
+  .tarjeta-publicitaria {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-santo {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .contenido-santo h4 {
+    font-size: 1.2rem;
+  }
+
+  .contenido-santo p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+
+  .imagen-santo img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+}
+
+/* Css de los votones de santos que esta en el aside */
+.facebook-widget a{
+  background-color: #99e5c1; /* amarillo original */
+  color: #9b1b1b;            /* rojo del texto */
+  padding: 10px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  margin: 8px 6px;
+  transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+.facebook-widget a:hover {
+  transform: translateY(-1px);
+}
+
+/* Estado visto (aplicado por JS) */
+.facebook-widget a.visto {
+  background-color: #591e98;  /* morado devocional */
+  color: #FFFFFF;             /* blanco legible */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS DE CORTEJOS PROCESIONALES*/
+.publicidad-devocional.procesiones {
+  background-color: #eef7ff; /* azul litúrgico suave */
+  border-top: 3px solid #1e88e5; /* azul procesional */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(30, 136, 229, 0.2);
+}
+
+.publicidad-devocional.procesiones h3 {
+  color: #1e88e5;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.publicidad-devocional.procesiones .tarjeta-publicitaria {
+  display: flex;
+
+   flex-direction: column;
+
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(30, 136, 229, 0.1);
+
+
+  text-align: center;
+}
+
+.publicidad-devocional.procesiones .imagen-santo img {
+ border: 2px solid #1e88e5;
+ border-radius: 8px;
+ width: 100%;
+ max-width: 280px;
+height: auto;
+}
+
+.publicidad-devocional.procesiones .contenido-santo h4 {
+  
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+
+   font-size: 1.2rem;
+
+}
+
+.publicidad-devocional.procesiones .contenido-santo p {
+ 
+  color: #555;
+
+
+
+     font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+
+/* procesión de santp domingo */
+
+.publicidad-devocional.procesion-domingo {
+  background-color: #f3f9ff; /* azul cielo suave */
+  border-top: 3px solid #1565c0; /* azul profundo */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(21, 101, 192, 0.2);
+}
+
+.publicidad-devocional.procesion-domingo h3 {
+  color: #1565c0;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.publicidad-devocional.procesion-domingo .tarjeta-publicitaria {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(21, 101, 192, 0.1);
+  text-align: center;
+}
+
+.publicidad-devocional.procesion-domingo .imagen-santo img {
+ 
+  border-radius: 8px;
+  border: 2px solid #1565c0;
+
+   width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.publicidad-devocional.procesion-domingo .contenido-santo h4 {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+}
+
+.publicidad-devocional.procesion-domingo .contenido-santo p {
+  font-size: 0.95rem;
+  color: #555;
+ line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+
+
+
+
+/* EL CSS QUE ESTA ABAJO 👇 NO LE HACE NADA A LA PAGINA YA QUE NO ESTA VINCULADO SOLO ME AYUDA A SABER QUE CONTENDRA LOS CSS DE ARRIBA 👍*/
+
+@media screen and (max-width: 768px) {
+  .tarjeta-publicitaria {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-santo {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .contenido-santo h4 {
+    font-size: 1.2rem;
+  }
+
+  .contenido-santo p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+
+  .imagen-santo img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+}
+
+
+
+/*CSS DE LA GALERIA*/
+
+#galeria {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#galeria h2 {
+  font-size: 2em;
+  color: #5a2a27;
+  margin-bottom: 30px;
+}
+
+.galeria-bloque {
+  margin-bottom: 40px;
+}
+
+.galeria-bloque h3 {
+  font-size: 1.5em;
+  color: #7a3e3e;
+  margin-bottom: 15px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.imagenes img {
+  width: 300px;
+  height: auto;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+  border-color: #5a2a27;
+}
+
+
+
+
+
+/*boton de volver a inicio*/
+.volver-inicio {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.volver-inicio a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5a2a27;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.volver-inicio a:hover {
+  background-color: #7a3e3e;
+}
+
+
+/*CSS DE RESPONSIVO*/
+
+
+
+/* Estilos para pantallas pequeñas */
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+  #aside {
+    max-width: 340px;
+    width: 100%;
+  }
+}
+
+.facebook-widget {
+  max-width: 340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+/* Ícono hamburguesa */
+.hamburguesa {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: #14e7ff;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 1000;
+}
+
+/* Aside oculto y flotante */
+#aside {
+  transition: transform 0.3s ease;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    position: relative;
+  }
+
+  #aside {
+    position: absolute;
+    top: 60px; /* debajo del botón */
+    right: 10px;
+    width: 90%;
+    max-width: 320px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 999;
+  }
+
+  #aside.activo {
+    display: block;
+  }
+
+  .hamburguesa {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+/* PIE DE PAGINA */
+
+.pie-devocional {
+  background-color: #1e88e5; /* azul espiritual */
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #1565c0;
+  width: 100%;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contenedor-principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+main {
+  flex: 1;
+  min-width: 300px;
+}
+
+aside {
+  width: 300px;
+}
+
+.pie-devocional {
+  background-color: #1e88e5;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #1565c0;
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+/* MUSICA DE LA PAGINA  */
+
+
+/* Botón flotante */
+.music-toggle {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  background: #983493; /* morado devocional */
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 14px;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(72, 183, 221, 0.3);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+}
+
+.music-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(199, 44, 44, 0.35);
+}
+
+.music-toggle[aria-pressed="true"] {
+  background: #72299c;
+}
+
+/* Notas musicales (se agregan dinámicamente) */
+.nota-musical {
+  position: fixed;              /* Coordenadas respecto a la ventana */
+  will-change: transform, opacity;
+  animation: flotar 1800ms ease-out forwards;
+  pointer-events: none;
+}
+
+/* Animación: subir con leve deriva horizontal */
+@keyframes flotar {
+  0% {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(var(--scale, 1));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx, 0px), -90px) scale(calc(var(--scale, 1) * 1.4));
+  }
+}

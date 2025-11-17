@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camino Sagrado</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Camino Sagrado</h1>
+    <nav>
+      <ul>
+        <li><a href="#tradicion">Tradición</a></li>
+        <li><a href="#santos">Santos</a></li>
+        <li><a href="#procesiones">Procesiones</a></li>
+        <li><a href="#galeria">Galería</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="galeria">
+      <h2>Galería Devocional</h2>
+      <div class="imagenes">
+        <img src="img/jesus1.jpg" alt="Jesús Nazareno">
+        <img src="img/maria1.jpg" alt="Virgen Dolorosa">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Camino Sagrado</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
+
+
+
+ <section>
+
+        <a href="#pedro" class="btn">San Pedro Apóstol</a>
+        <br>
+        <a href="#domingo" class="btn">Santo Domingo de Guzmán</a>
+        <br>
+        <a href="#juan" class="btn">San Juan Bautista</a>
+        <br>
+        <a href="#santi" class="btn">Santiago Apóstol</a>
+        <br>
+        <a href="#asun" class="btn">Santa María de la Asunción</a>
+  </section>
+<!-- script de los botonos o bien de lo que esta en el aside sobre cambiar de color las palabras luego de ser visto  -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const botones = document.querySelectorAll('.btn');
+
+    botones.forEach(boton => {
+      const id = boton.getAttribute('href').replace('#', '');
+      const clave = 'visto:' + id;
+
+      // Si ya fue visto, aplicar clase
+      if (localStorage.getItem(clave) === '1') {
+        boton.classList.add('visto');
+      }
+
+      // Al hacer clic, marcar como visto
+      boton.addEventListener('click', () => {
+        boton.classList.add('visto');
+        localStorage.setItem(clave, '1');
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="music-toggle" id="soundToggle" aria-pressed="false">🔈 ♫ Música</button>
+
+<audio id="bgMusic2" src="San Rafael.mp3" preload="auto" loop autoplay muted></audio>
+
+
+<div id="notas-container"></div>
+
+
+<script>
+  const toggle = document.getElementById('soundToggle');
+  const player = document.getElementById('bgMusic2');
+  player.volume = 0.25;
+
+  // Si el navegador bloquea el autoplay, intentamos al primer clic en cualquier lugar
+  document.addEventListener('click', async function onFirstClick() {
+    try { await player.play(); } catch {}
+    document.removeEventListener('click', onFirstClick);
+  }, { once: true });
+
+  toggle.addEventListener('click', () => {
+    const active = toggle.getAttribute('aria-pressed') === 'true';
+    if (active) {
+      player.muted = true;
+      toggle.setAttribute('aria-pressed', 'false');
+      toggle.textContent = '🔈 Activar sonido';
+    } else {
+      player.muted = false;
+      toggle.setAttribute('aria-pressed', 'true');
+      toggle.textContent = '🔇 Silenciar';
+    }
+  });
+</script>
